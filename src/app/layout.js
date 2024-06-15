@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./components/Header";
 import { Providers } from "./Providers";
 import Navbar from "./components/Navbar";
+import SearchBox from "./components/SearchBox";
 
 const vazirmatn = Vazirmatn({ subsets: ["latin"] });
 export const metadata = {
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
         <Providers>
           <Header />
           <Navbar />
+          <SearchBox />
           {children}
         </Providers>
       </body>
